@@ -6,8 +6,114 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.imageUploader {
+  height: 469px;
+  box-shadow: 0px 4px 12px rgb(0 0 0 / 10%);
+  border-radius: 12px;
+  margin: auto;
+  width: 312px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -webkit-pictograph;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  margin-top: 10px;
+}
+.fileType {
+  font-size: x-small;
+  font-style: italic;
+  color: gray;
+}
+.dragAndDrop {
+ width: 80%;
+  background-color: #F6F8FB;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dashed lightblue;
+}
+input[type="file"] {
+  display:none;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #2F80ED;
+  color: white;
+}
+.imageBackground{
+  border: none;
+  background-repeat: round;
+  background-size: cover;
+}
+.uploading{
+  box-shadow: 0px 4px 12px rgb(0 0 0 / 10%);
+  border-radius: 12px;
+  margin: auto;
+  width: 312px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  line-height: 27px;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.loading{
+  border: 10px solid #f3f3f3;
+border-radius: 50%;
+border-top: 10px solid #3498db;
+width: 80px;
+height: 80px;
+-webkit-animation: spin 2s linear infinite; /* Safari */
+animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.imageContainer {
+  width: 80%;
+   background-color: #F6F8FB;
+   height: 230px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px dashed lightblue;
+   background-repeat: round;
+   background-size: cover;
+}
+.copyLink {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #2F80ED;
+  color: white;
+}
+.imageBackground{
+  border: none;
+  background-repeat: round;
+  background-size: cover;
+}
+.imageLink{
+  display: inline-flex;
+  height: 40px;
+  margin-top: 20px;
 }
